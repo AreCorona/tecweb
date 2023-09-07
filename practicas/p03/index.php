@@ -112,7 +112,25 @@
     
 prueba();
 
-    echo '<br>';
+   
+
+
+echo "<h2>Ejercicio 5
+    <p>Dar el valor de las variables $a, $b, $c al final del siguiente script: </h2>"
+    $a = “7 personas”; <br>
+    $b = (integer) $a; <br>
+    $a = “9E3”; <br>
+    $c = (double) $a; <br>  </p>
+
+    <?php
+    $a = "7 personas";
+    echo 'Valor de $a: '.$a.'<br>';
+    $b = (integer) $a;
+    echo 'Valor de $b: '.$b.'<br>';
+    $a = "9E3";
+    echo 'Valor de $a: '.$a.'<br>';
+    $c = (double) $a;
+    echo 'Valor de $c: '.$c.'<br>';
     ?>
 
 
