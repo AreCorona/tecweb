@@ -25,6 +25,40 @@
         echo '<li>$var7 es válida porque inicia con una letra.</li>';
         echo '<li>$_element1 es válida porque inicia con guión bajo.</li>';
         echo '</ul>';
+
+
+
+
+        
+
+        echo "<h2>Ejericio 2</h2>";
+        echo " <p>  Proporcionar los valores de $ a, $ b, $ c como sigue:</p> ";
+        $a =  "ManejadorSQL";
+        $b = 'MySQL';
+        $c = &$a;
+        $a = "PHP server";
+        $b = &$a;
+
+        echo "<h3> Ahora muestra el contenido de cada variable </h3>";
+        
+        echo ($a = "ManejadorSQL"); echo "<br>";
+        echo ($b = "MySQL"); echo "<br>";
+        echo ($c);
+        echo ($a = "PHP Server"); echo "<br>";
+        echo ($b); echo "<br>";
+
+        echo "<p>Agrega al código actual las siguientes asignaciones: </p>";
+        echo "
+        <p>
+        $a = “PHP server”; 
+        $b = &
+        $a;
+        </p>";
+
+        echo "<p>Vuelve a mostrar el contenido de cada uno </p>";
+        echo ($a = "PHP Server"); echo "<br>";
+        echo ($b); echo "<br>";
+        echo "<h3>Se agregaron nuevas asignaciones</h3>";
     ?>
 </body>
 </html>
