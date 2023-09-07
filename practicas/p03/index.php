@@ -139,15 +139,19 @@ echo <h2>Ejercicio 5</h2>
     usando la función var_dump(<'datos'>). <br>
     </p>"
 
-    <?php
-    $a = TRUE;
-    $b = FALSE;
-    $c = TRUE;
-    $d = FALSE;
-    $e = TRUE;
-    $f = FALSE;
+    $a = "0";
+            $b = "TRUE";
+            $c = FALSE;
+            $d = ($a OR $b);
+            $e = ($a AND $c);
+            $f = ($a XOR $b); 
+            var_dump($a); echo "<br>";
+            var_dump($b); echo "<br>";
+            var_dump($c); echo "<br>";
+            var_dump($d); echo "<br>";
+            var_dump($e); echo "<br>";
+            var_dump($f); echo "<br>";
 
-    var_dump($a, $b, $c, $d, $e, $f);
 
     echo "<br><br>Después investiga una función de PHP que permita transformar el valor booleano de $c y $e <br>
     en uno que se pueda mostrar con un echo: <br> <br>"
@@ -164,7 +168,7 @@ echo <h2>Ejercicio 5</h2>
 
     <h2>Ejercicio 7</h2>
     <p>Usando la variable predefinida $_SERVER, determina lo siguiente: <br>
-    
+
     a. La versión de Apache y PHP, <br>
     b. El nombre del sistema operativo (servidor), <br>
     c. El idioma del navegador (cliente). <br></p>
