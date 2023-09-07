@@ -29,7 +29,7 @@
 
 
 
-        
+
 
         echo "<h2>Ejericio 2</h2>";
         echo " <p>  Proporcionar los valores de $ a, $ b, $ c como sigue:</p> ";
@@ -59,6 +59,45 @@
         echo ($a = "PHP Server"); echo "<br>";
         echo ($b); echo "<br>";
         echo "<h3>Se agregaron nuevas asignaciones</h3>";
+
+
+     echo "<h2>Ejercicio 3</h2>";
+    <p>Muestra el contenido de cada variable inmediatamente después de cada asignación, <br>
+    verificar la evolución del tipo de estas variables (imprime todos los componentes de los <br>
+    arreglo): <br></p>
+
+    <?php
+    
+    $a = "PHP5";
+    echo 'Valor de $a: '.$a.'<br>';
+
+    $z[] = &$a;
+    echo 'Valor de $z: ';
+    print_r ($z);
+    echo '<br>';
+
+    $b = "5a version de PHP";
+    echo 'Valor de $b: '.$b.'<br>';
+
+    @$c = $b*10;
+    echo 'Valor de $c: '.$c. '<br>';
+
+    $a .= $b;
+    echo 'Valor de $a: '.$a.'<br>';
+
+    $b *= $c;
+    echo 'Valor de $b: '.$b.'<br>';
+
+    $z[0] = "MySQL";
+    print_r ($z);
+    echo '<br>';
+    ?>
+
+
+
+
+
+
     ?>
 </body>
 </html>
