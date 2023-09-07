@@ -31,7 +31,7 @@
 
 
 
-        echo "<h2>Ejericio 2</h2>";
+        echo <h2>Ejericio 2</h2>;
         echo " <p>  Proporcionar los valores de $ a, $ b, $ c como sigue:</p> ";
         $a =  "ManejadorSQL";
         $b = 'MySQL';
@@ -61,7 +61,7 @@
         echo "<h3>Se agregaron nuevas asignaciones</h3>";
 
 
-     echo "<h2>Ejercicio 3</h2>";
+     echo <h2> Ejercicio 3 </h2>;
      echo "<p> Muestra el contenido de cada variable inmediatamente después de cada asignación
     verificar la evolución del tipo de estas variables (imprime todos los componentes de los 
     arreglos): </p>";
@@ -94,9 +94,6 @@
     ?>
 
 
-
-
-
      echo "<h2> Ejercicio 4 </h2>";
     <p>Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de <br>
     la matriz $GLOBALS o del modificador global de PHP.</p>
@@ -115,14 +112,14 @@ prueba();
    
 
 
-echo "<h2>Ejercicio 5
-    <p>Dar el valor de las variables $a, $b, $c al final del siguiente script: </h2>"
+echo <h2>Ejercicio 5</h2>
+    echo "<p>Dar el valor de las variables $a, $b, $c al final del siguiente script: "
     $a = “7 personas”; <br>
     $b = (integer) $a; <br>
     $a = “9E3”; <br>
     $c = (double) $a; <br>  </p>
 
-    <?php
+    
     $a = "7 personas";
     echo 'Valor de $a: '.$a.'<br>';
     $b = (integer) $a;
@@ -131,13 +128,40 @@ echo "<h2>Ejercicio 5
     echo 'Valor de $a: '.$a.'<br>';
     $c = (double) $a;
     echo 'Valor de $c: '.$c.'<br>';
-    ?>
+
+
+
+
+
+    <h2>Ejercicio 6</h2>
+   echo "<p>
+    Dar y comprobar el valor booleano de las variables $a, $b, $c, $d, $e y $f y muéstralas <br>
+    usando la función var_dump(<'datos'>). <br>
+    </p>"
+
+    <?php
+    $a = TRUE;
+    $b = FALSE;
+    $c = TRUE;
+    $d = FALSE;
+    $e = TRUE;
+    $f = FALSE;
+
+    var_dump($a, $b, $c, $d, $e, $f);
+
+    echo "<br><br>Después investiga una función de PHP que permita transformar el valor booleano de $c y $e <br>
+    en uno que se pueda mostrar con un echo: <br> <br>"
+
+    echo var_export($c, true); "<br>";
+    echo var_export($e, true); "<br>";
+    
+   
 
 
 
 
 
 
-    ?>
+    
 </body>
 </html>
