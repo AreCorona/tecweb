@@ -62,11 +62,11 @@
 
 
      echo "<h2>Ejercicio 3</h2>";
-    <p>Muestra el contenido de cada variable inmediatamente después de cada asignación, <br>
-    verificar la evolución del tipo de estas variables (imprime todos los componentes de los <br>
-    arreglo): <br></p>
+     echo "<p> Muestra el contenido de cada variable inmediatamente después de cada asignación
+    verificar la evolución del tipo de estas variables (imprime todos los componentes de los 
+    arreglos): </p>";
 
-    <?php
+ 
     
     $a = "PHP5";
     echo 'Valor de $a: '.$a.'<br>';
@@ -90,6 +90,28 @@
 
     $z[0] = "MySQL";
     print_r ($z);
+    echo '<br>';
+    ?>
+
+
+
+
+
+     echo "<h2> Ejercicio 4 </h2>";
+    <p>Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de <br>
+    la matriz $GLOBALS o del modificador global de PHP.</p>
+    <?php
+    function prueba(){
+        global $a, $b, $c, $z;
+    echo 'Valor de $a: '.$a.'<br>';
+    echo 'Valor de $b: '.$b.'<br>';
+    echo 'Valor de $c: '.$c.'<br>';
+    echo 'Valor de $z: ';
+    print_r ($z);
+    }
+    
+prueba();
+
     echo '<br>';
     ?>
 
